@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignIT</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="favicon_io (1)/favicon-16x16.png">
+  <link rel="stylesheet" href="favicon_io (1)/favicon-16x16.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+  <div class="main">
+    <div class="top">
+      <div class="block">
+        <p>Text Color Picker</p>
+        <!--Taking input as color-->
+        <input class="form-control" type="color" id="colorPicker"/>
+        </div>
+      <div class="block">
+        <p>Background Color</p>
+        <input type="color" class="form-control" id="canvasColor"/>
+      </div>
+
+      <div class="block">
+         <p>Font Size</p>
+         <select id="fontPicker">
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="15">15</option>
+          <option value="20">20</option>
+          <option value="25">25</option>
+          <option value="30">30</option>
+          <option value="35">35</option>
+          <option value="40">40</option>
+          <option value="45">45</option>
+          <option value="50">50</option>
+         </select>
+      </div>
+  </div>
+  <canvas class="canvas" id="myCanvas" width="800" height="500"></canvas>
+
+  <div class="bottom">
+    <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
+    <button type="button" class="btn btn-success" id="saveButton">Save & Download</button>
+    <button type="button" class="btn btn-warning" id="retrieveButton">Retrieve saved Signature</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+  
+</script>
+</body>
+</html>
